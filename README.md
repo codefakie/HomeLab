@@ -8,9 +8,18 @@ Since I already had some Raspberry Pis laying around I decided to flash PI Image
 
 pi imager:
 
-![alt text](1_Gxvzrhuucq6f8Tr5UB1I5w.webp)
+![alt text]c:\Users\MichaelSmith\Downloads\Ras-Pi-Imager.webp
 
-download and install with ssh username and ip and password
+Before you flash the OS onto the USB, it’s crucial to configure the node name and login details for each node.
+
+Once the OS preparation for each node is complete, I set up the following cluster:
+
+    control: 192.168.0.101
+    k3sworker1: 192.168.1.102 
+    k3sworker2: 192.168.1.103 
+
+
+![alt text](1_YaZDehBFT_c-81Pji8Mz-w.webp)
 
 I. Config static IP for Pi
 
