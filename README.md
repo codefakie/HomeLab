@@ -8,6 +8,8 @@ Since I already had some Raspberry Pis laying around I decided to flash PI Image
 
 pi imager:
 
+![alt text](1_Gxvzrhuucq6f8Tr5UB1I5w.webp)
+
 download and install with ssh username and ip and password
 
 I. Config static IP for Pi
