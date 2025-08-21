@@ -1,4 +1,7 @@
-This is a breakdown and step by step guide how I built my Homelab K3s Cluster. I had 3 Raspberry 4's laying around for another project I was gonna tinker on way back so I decided to use them along with a Lenonovo M710q Mini PC. Initially the Lenovo had 8GB of RAM, 500GB SSD and though only 4 Core CPU, I was planning on hyperthreading that puppy to make it a up to 8 VMs for a Proxmox VM and could vituarlize the Server to have 8 VMs. I beefed it up a bit adding 32GBs of RAM and a 1TB Solid state. After setting up a Proxmox cluster, I decided to wipe it and add it to my K3s HomeLab Cluster and a beefy worker node. 
+<h3>This is a breakdown and step by step guide how I built my Homelab K3s Cluster.</h3>
+
+Equipment breakdown:
+I had 3 Raspberry 4's laying around for another project I was gonna tinker on way back so I decided to use them along with a Lenonovo M710q Mini PC. Initially the Lenovo had 8GB of RAM, 500GB SSD and though only 4 Core CPU, I was planning on hyperthreading that puppy to make it a up to 8 VMs for a Proxmox VM and could vituarlize the Server to have 8 VMs. I beefed it up a bit adding 32GBs of RAM and a 1TB Solid state. After setting up a Proxmox cluster, I decided to wipe it and add it to my K3s HomeLab Cluster and a beefy worker node. 
 
 
 I discovered https://rpi4cluster.com/ and yes that is the ultimate resourse so I will not go too deep into every step which can be found there. That site is a master class on setting up a setting up a homelab k3s cluster from Zero to Hero, so I will most certainly heap tons of praise on that site. This is my lil slice of the Pi (bad pun I know) documenting my Home Lab Journey and what I did to get my techy stuff humming..
@@ -8,7 +11,6 @@ Since I already had some Raspberry Pis laying around I decided to flash PI Image
 
 pi imager:
 
-![alt text]c:\Users\MichaelSmith\Downloads\Ras-Pi-Imager.webp
 
 Before you flash the OS onto the USB, it’s crucial to configure the node name and login details for each node.
 
@@ -19,7 +21,6 @@ Once the OS preparation for each node is complete, I set up the following cluste
     k3sworker2: 192.168.1.103 
 
 
-![alt text](1_YaZDehBFT_c-81Pji8Mz-w.webp)
 
 I. Config static IP for Pi
 
